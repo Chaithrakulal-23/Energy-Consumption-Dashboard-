@@ -66,7 +66,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
   SELECT * FROM energy_consumption;
   ```
 
-  ![Snowflake Transformation SQL - Monthly Usage KWH Update](https://user-images.githubusercontent.com/your-id/snowflake-transformation-sql.jpg)
+  ![Snowflake Transformation SQL - Monthly Usage KWH Update](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/07dcf669030c9b1e27d6c5958340ada8ed31ba96/updateddata.png)
 
 - **Step 8 :** Connected **Power BI Desktop** to Snowflake:
   - Used **Get Data → Snowflake** in Power BI.
