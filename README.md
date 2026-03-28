@@ -15,7 +15,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
 
 - **Step 1 :** Loaded the **Renewable Energy Usage** dataset (Excel file) into AWS S3 by creating a dedicated S3 bucket via the AWS Management Console and uploading the sampled dataset.
 
-  ![S3 Bucket with Dataset](https://user-images.githubusercontent.com/your-id/s3-bucket-upload.jpg)
+  ![S3 Bucket with Dataset](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/7d0c28aa8962309a06afa382131e3872e68c7297/bucket.png)
 
 - **Step 2 :** Established a secure connection between AWS S3 and Snowflake by creating an IAM Role in AWS:
   - Navigated to IAM → Create Role → Selected AWS Account type.
