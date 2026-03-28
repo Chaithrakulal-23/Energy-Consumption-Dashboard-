@@ -34,7 +34,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
   ```
   Pasted these values into the IAM Role's Trust Policy in AWS and updated it to complete the secure handshake.
 
-  ![Updated Trust Policy](https://user-images.githubusercontent.com/your-id/desc-integration-trust-policy.jpg)
+  ![Updated Trust Policy](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/e2883466bb1cadc93c5476e83535fec8b329c826/trustpolicy.png)
 
 - **Step 5 :** In Snowflake, set up the data pipeline:
   - Created a **Database**, **Schema**, and **Table** named `Power_Dataset` to store the renewable energy data.
