@@ -99,7 +99,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
 
 # Report Snapshot (Power BI Desktop)
 
-![Report Snapshot Power BI Desktop](https://user-images.githubusercontent.com/your-id/dashboard-powerbi-desktop-full.jpg)
+![Report Snapshot Power BI Desktop](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/84af629318ed79dfd990f5a34584fbc6536089f4/awspbi2desk.png)
 
 ---
 
