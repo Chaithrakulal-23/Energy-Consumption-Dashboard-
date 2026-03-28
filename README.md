@@ -22,7 +22,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
   - Provided a placeholder External ID and attached the **AmazonS3FullAccess** permission policy.
   - Named the role and noted the generated **ARN** and **Trust Policy**.
 
-  ![IAM Role ](https://user-images.githubusercontent.com/your-id/iam-role-arn.jpg)
+  ![IAM Role ](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/9c2e64d2973259601c8aa8b2e786d13314eb3a18/role.png)
 
 - **Step 3 :** In Snowflake, created a **Storage Integration Object** using the IAM Role ARN to authorize Snowflake to read from the S3 bucket.
 
