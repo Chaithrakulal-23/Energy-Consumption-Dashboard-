@@ -41,7 +41,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
   - Created a **Stage** pointing to the S3 bucket location.
   - Loaded data from the Stage into the Snowflake table using COPY INTO.
 
-  ![Snowflake Database Schema Stage Table](https://user-images.githubusercontent.com/your-id/snowflake-db-schema-table.jpg)
+  ![Snowflake Database Schema Stage Table](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/9cbf18493421b2ecceb1c55e076515aca5ba082c/stage2.png)
 
 - **Step 6 :** Performed **Data Profiling** to understand the dataset structure — reviewed column types, value distributions, and identified key fields like `monthly_usage_kwh`, `income_level`, `energy_source`, `region`, and `country`.
 
