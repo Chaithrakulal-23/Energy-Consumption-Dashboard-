@@ -89,7 +89,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
 
 - **Step 10 :** Published the completed report to **Power BI Cloud Service** for stakeholder access.
 
-  ![Power BI Publish Success Message](https://user-images.githubusercontent.com/your-id/powerbi-publish-success.jpg)
+  ![Power BI Publish Success Message](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/0a7886899acdaa98d8b14d96732f1d358345d135/publi.png)
 
 ---
 
