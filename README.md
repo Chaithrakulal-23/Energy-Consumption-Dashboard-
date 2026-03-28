@@ -26,7 +26,7 @@ Wind energy leads in both monthly usage (0.28M) and cost savings (59K USD), whil
 
 - **Step 3 :** In Snowflake, created a **Storage Integration Object** using the IAM Role ARN to authorize Snowflake to read from the S3 bucket.
 
-  ![Snowflake Storage Integration Code](https://user-images.githubusercontent.com/your-id/snowflake-integration-code.jpg)
+  ![Snowflake Storage Integration Code](https://github.com/Chaithrakulal-23/Energy-Consumption-Dashboard-/blob/31223b9f2599ce4fb294f13384ac699412b7244c/createddatabaseshcematable.png)
 
 - **Step 4 :** Retrieved the Snowflake-generated **ARN** and **External ID** using:
   ```sql
