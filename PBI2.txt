@@ -1,0 +1,107 @@
+CREATE OR REPLACE STORAGE INTEGRATION Powerbi_IntegrationC
+TYPE = EXTERNAL_STAGE
+STORAGE_PROVIDER = 'S3'
+ENABLED = TRUE
+STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::396231126183:role/powerener.role'
+STORAGE_ALLOWED_LOCATIONS = ('s3://powerbien.project/')
+COMMENT = 'Optional Comment'
+
+  //description Integration Object
+  desc integration Powerbi_IntegrationC;
+
+CREATE database Power;
+
+create schema Power_Data;
+
+create table Power_DatasetC(
+Household_ID string,
+Region string,
+Country string,
+Energy_Source string,
+Monthly_Usage_kWH float,
+Year int,
+Household_Size int,
+Income_Level string,
+Urban_Rural string, Adoption_Year int, Subsidy_Received string , Cost_Savings_USD float
+
+);
+
+
+select * from Power_DatasetC;
+
+create stage Power.Power_Data.Power_stage
+url = 's3://powerbien.project/'
+storage_integration = Powerbi_IntegrationC
+
+//desc stage s1
+
+//drop stage s1;
+
+copy into Power_DatasetC
+from @Power_stage
+file_format = (type=csv field_delimiter=',' skip_header=1 )
+on_error = 'continue'
+
+select * from Power_DatasetC;
+
+select region,count(*) from Power_DatasetC group by region
+
+//cretaing duplicate table
+
+create table energy_consumption as
+select * from Power_DatasetC
+
+select * from energy_consumption
+
+select income_level ,count(*) from energy_consumption group by income_level
+
+//update energy consumption for 
+//low income level 10%
+//Middle income level 20%
+//High income level 30%
+
+update energy_consumption
+set monthly_usage_kwh = monthly_usage_kwh * 1.1
+where income_level = 'Low'
+
+update energy_consumption
+set monthly_usage_kwh = monthly_usage_kwh * 1.2
+where income_level = 'Middle'
+
+update energy_consumption
+set monthly_usage_kwh = monthly_usage_kwh * 1.3
+where income_level = 'High'
+
+select * from energy_consumption
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Reduce the Cost_Savings_USD If Level is
+//Low by 10%
+//Middle by 20%
+//High by 30%   
+
+update energy_consumption
+set cost_savings_usd = cost_savings_usd * 0.9
+where income_level = 'Low'
+
+update energy_consumption
+set cost_savings_usd = cost_savings_usd * 0.8
+where income_level = 'Middle'
+
+update energy_consumption
+set cost_savings_usd = cost_savings_usd * 0.7
+where income_level = 'High'
+
+select * from energy_consumption
